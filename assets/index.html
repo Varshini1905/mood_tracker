@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Habit & Mood Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>🌱 Habit & Mood Tracker</h1>
+
+    <!-- Mood Section -->
+    <section class="card">
+      <h2>How are you feeling today?</h2>
+      <div class="moods">
+        <button class="mood" data-mood="Happy">😊</button>
+        <button class="mood" data-mood="Neutral">😐</button>
+        <button class="mood" data-mood="Sad">😔</button>
+        <button class="mood" data-mood="Stressed">😣</button>
+      </div>
+      <p id="mood-status"></p>
+    </section>
+
+    <!-- Habit Section -->
+    <section class="card">
+      <h2>Today's Habits</h2>
+
+      <div class="habit">
+        <input type="checkbox" id="water">
+        <label for="water">💧 Drink Water</label>
+      </div>
+
+      <div class="habit">
+        <input type="checkbox" id="exercise">
+        <label for="exercise">🏃 Exercise</label>
+      </div>
+
+      <div class="habit">
+        <input type="checkbox" id="sleep">
+        <label for="sleep">😴 Sleep 7+ Hours</label>
+      </div>
+
+      <div class="habit">
+        <input type="checkbox" id="study">
+        <label for="study">📚 Study / Work</label>
+      </div>
+
+      <p id="habit-status"></p>
+    </section>
+
+    <!-- Insight Section -->
+    <section class="card insight">
+      <h2>🧠 Insight</h2>
+      <p id="insight-text">Log your mood and habits to see insights!</p>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
